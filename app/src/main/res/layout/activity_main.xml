@@ -19,5 +19,11 @@
         android:id="@+id/Welcome"
         android:text="欢迎"
         android:onClick="doClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转"
+        android:id="@+id/jump"
+        android:onClick="doClick"/>
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.win10.firstapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.Welcome:
                 Toast.makeText(MainActivity.this,"欢迎来到完美世界",Toast.LENGTH_SHORT).show();
+            break;
+
+            case R.id.jump:
+                Intent intent=new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent);
         }
     }
 }
